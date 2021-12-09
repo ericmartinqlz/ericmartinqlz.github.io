@@ -1,0 +1,20 @@
+{
+  "short_name": "EricMartinQLZ",
+  "name": "EricMartinQLZ - Web Personal",
+  "icons": [
+    {
+      "src": "images/logo-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "images/logo-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#036EDE",
+  "background_color": "#ffffff"
+}

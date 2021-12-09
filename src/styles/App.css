@@ -1,0 +1,230 @@
+:root {
+  --main-blue : #036EDE;
+  --hover-main-blue : #0b5aaf;
+  --skeleton-dark : #C4C4C4; 
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #F4F4F4; 
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background: #C4C4C4;
+  border-radius: 5px;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+}
+
+body {
+  background: #F4F5F8;
+}
+body.nav-show {
+  overflow-y: hidden;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 20px;
+}
+.App .black-screen {
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+body.nav-show .App .black-screen {
+  display: block;
+}
+
+p {
+  font-size: 18px;
+}
+
+.button {
+  padding: 8.88px 21.11px;
+  border: none;
+  font-size: 18px;
+  border-radius: 8.88px;
+  cursor: pointer;
+  width: fit-content;
+}
+.button.primary {
+  background: var(--main-blue);
+  color: #FFF;
+}
+
+.soon-div h2, .page-not-found h2{
+  text-align: center;
+  font-size: 36px;
+  font-weight: 300;
+}
+
+.ease-out{
+  transition: .4s;
+  transition-timing-function: ease-out;
+}
+
+
+/* Header */
+header {
+  order: 2;
+  z-index: 9998;
+}
+
+
+/* Header - AppBar */
+.AppBar-Desktop {
+  display: none;
+}
+
+.AppBar-Mobile {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+.AppBar-Mobile .floating-button {
+  display: flex;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: var(--main-blue);
+  filter: drop-shadow(0 4px 10px #036EDE33);
+}
+.AppBar-Mobile .floating-button i{
+  writing-mode: vertical-rl;
+  font-size: 24px;
+  margin: auto;
+  color: #FFF;
+}
+body.nav-show .AppBar-Mobile .floating-button{
+  transform: scale(0, 0);
+}
+
+
+/* Header - Navbar */
+nav {
+  position: fixed;
+  background: #FFF;
+  border-radius: 15px;
+  padding: 20px;
+  bottom: 20px;
+  right: 20px;
+  left: 20px;
+  transform: translate(0, 400px);
+  filter: drop-shadow(0 8px 20px #9AAACF33);
+}
+body.nav-show nav{
+  transform: translate(0, 0);
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+nav ul li {
+  text-align: center;
+}
+nav li a {
+  color: #000;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  padding: 25px 0;
+  width: auto;
+  border-radius: 15px;
+}
+nav li a:hover {
+  background: #F7F7F7;
+}
+nav li i{
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+  font-size: 24px;
+}
+nav span{
+  font-size: 14px;
+}
+
+nav li a .icon-fill {
+  display: none;
+}
+nav li a.active-link {
+  background: var(--main-blue);
+}
+nav li a.active-link .icon-fill {
+  display: flex;
+  color: #FFF;
+}
+nav li a.active-link .icon {
+  display: none;
+}
+nav li a.active-link span{
+  color: #FFF;
+}
+
+
+/* Main Section */
+main {
+  order: 1;
+  margin-bottom: 40px;
+}
+
+
+/* Page Style */
+.PageDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.PageHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  background: #FFF;
+  filter: drop-shadow(0 8px 20px #9AAACF33);
+  height: 60px;
+  border-radius: 15px;
+}
+.PageHeader h2 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 32px;
+}
+.PageHeader .dotline{
+  position: relative;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #000;
+}
+
+/* EricMartinQLZ */
+.PageMain {
+  background: #FFF;
+  border-radius: 15px;
+  filter: drop-shadow(0 8px 20px #9AAACF33);
+  padding: 20px;
+  font-size: 16px;
+}
+
+.PageMain section > div{
+  margin-bottom: 40px;
+}

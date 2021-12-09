@@ -1,0 +1,86 @@
+.page-certificate .certificate-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.page-certificate .certificate-item a { 
+  text-decoration: none;
+  color: unset;
+}
+.page-certificate .certificate-item a:hover { 
+  text-decoration: underline;
+}
+
+.page-certificate .certificate-item h3{
+  font-size: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.page-certificate .certificate-item p{
+  font-size: 18px;
+  color: #545454;
+}
+
+/* EricMartinQLZ */
+.page-certificate .certificate-item img {
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+  border-radius: 8.88px;
+  width: 100%;
+}
+
+/* Responsive */
+@media screen and (min-width: 560px) {
+  .page-certificate .certificate-list {
+    gap: 20px;
+  }
+
+  .page-certificate .certificate-item {
+    width: calc(50% - 10px);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .page-certificate .certificate-list {
+    justify-content: unset;
+  }
+
+  .page-certificate .certificate-item {
+    width: calc(33% - 15px);
+  }
+}
+
+@media screen and (min-width: 900px){
+  .page-certificate .certificate-item {
+    width: calc(25% - 15px);
+  }
+}
+
+@media screen and (min-width: 768px) and (min-height:537px) {
+  .page-certificate .certificate-item {
+    width: 175px;
+  }
+
+  .page-certificate .certificate-item h3{
+    font-size: 18px;
+    min-height: 50px;
+  }
+  .page-certificate .certificate-item p{
+    font-size: unset;
+  }
+}
+
+@media screen and (min-width: 900px) and (min-height:537px) {
+  .page-certificate .certificate-list {
+    gap: 40px;
+  }
+
+  .page-certificate .certificate-item {
+    width: 200px;
+  }
+}

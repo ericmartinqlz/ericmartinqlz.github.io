@@ -1,0 +1,60 @@
+/* EricMartinQLZ */
+.page-skill h3 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.page-skill .skill-list {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  flex-wrap: wrap;
+  gap: 8.88px;
+  max-width: 900px;
+}
+
+.page-skill .skill-item {
+  display: flex;
+  width: 125px;
+  height: 125px;
+  background: #C4C4C4;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 8px;
+  overflow: hidden;
+}
+.page-skill .skill-item i{
+  margin: auto;
+  font-size: 75px;
+  color: #FFF;
+}
+.page-skill .skill-item img{
+  width: 100%;
+  height: 100%;
+  user-select: none; /* supported by Chrome and Opera */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+}
+
+/* Responsive */
+@media screen and (min-width: 768px) and (min-height:537px) { 
+  .page-skill h3 {
+    text-align: left;
+    font-size: 28px;
+  }
+
+  .page-skill .skill-list {
+    justify-content: start;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: unset;
+    max-width: unset;
+  }
+
+  .page-skill .skill-item {
+    width: 150px;
+    height: 150px;
+  }
+}

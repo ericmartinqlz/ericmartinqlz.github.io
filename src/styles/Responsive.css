@@ -1,0 +1,198 @@
+@media screen and (min-width: 600px) {
+
+}
+
+@media screen and (min-width: 768px) and (min-height:537px) {
+  .App {
+    height: 100vh;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .soon-div h2, .page-not-found h2{
+    font-size: 64px;
+  }
+
+  /* Header */
+  header {
+    order: unset;
+    z-index: unset;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  /* Header - AppBar */
+  .AppBar-Desktop {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    background: #FFF;
+    border-radius: 15px;
+    filter: drop-shadow(0 8px 20px #9AAACF33);
+  }
+  .AppBar-Desktop a {
+    margin: auto;
+  }
+  .AppBar-Desktop img{
+    width: 75px;
+  }
+
+  .AppBar-Mobile {
+    display: none;
+  }
+
+  /* Navbar */
+  nav{
+    transform: unset;
+    position: unset;
+    padding: 20px 0;
+    height: 100%;
+    overflow-y: auto;
+  }
+  nav ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    overflow-y: auto;
+  }
+  nav ul::-webkit-scrollbar {
+    display: none;
+  }
+  nav li a {
+    border-radius: unset;
+    padding: 0;
+  }
+  nav li a:hover {
+    background: unset;
+    transform: scale(1.1, 1.1);
+  }
+  nav li span{
+    font-size: 12px;
+  }
+  nav li i {
+    font-size: 24.89px;
+    margin-bottom: 4px;
+  }
+
+  nav li a.active-link {
+    background: unset;
+  }
+  nav li a.active-link .icon-fill {
+    display: flex;
+    color: var(--main-blue);
+  }
+  nav li a.active-link .icon {
+    display: none;
+  }
+  nav li a.active-link span{
+    color: var(--main-blue);
+    font-weight: 500;
+  }
+  
+
+  /* Main Section */
+  main {
+    order: unset;
+    margin-bottom: unset;
+    width: 100%;
+  }
+
+  /* Page Style */
+  .PageDiv {
+    display: flex;
+    background: white;
+    box-shadow: 0 16px 40px #9aaad033;
+    border-radius: 15px;
+    height: 100%;
+    max-height: 100%;
+    padding: 20px 0 20px 20px;
+  }
+
+  .PageHeader {
+    display: flex;
+    align-items: center;
+    justify-content: unset;
+    background: unset;
+    filter: unset;
+    height: unset;
+    border-radius: unset;
+    gap: unset;
+  }
+  .PageHeader h2 {
+    text-transform: capitalize;
+  }
+
+  .PageHeader .dotline{
+    width: 10.64px;
+    height: 10.64px;
+    margin-left: 22.22px;
+  }
+  .PageHeader .dotline.first {
+    display: none;
+  }
+  .PageHeader .dotline.second:after {
+    content: "";
+    width: 222.22px;
+    height: 5.33px;
+    border-radius: 3px;
+    background-color: #000;
+    display: block;
+    position: absolute;
+    bottom: 2px;
+    left: calc(100% + 22.22px);
+  }
+
+  /* EricMartinQLZ */
+  .PageMain {
+    background: unset;
+    border-radius: unset;
+    filter: unset;
+    padding: unset;
+    font-size: 16px;
+    overflow-y: auto;
+    height: inherit;
+  }
+
+  .PageHeader, .PageMain section {
+    padding-right: 20px;
+  }
+}
+
+@media screen and (min-width: 900px) and (min-height:537px) {
+  .App {
+    padding: 31.11px;
+    gap: 31.11px;
+  }
+
+  /* Header */
+  header {
+    gap: 31.11px;
+  }
+
+  .PageDiv {
+    gap: 31.11px;
+    padding: 35.56px 0 35.56px 53.33px; 
+  }
+
+  .PageHeader h2 {
+    font-size: 42.67px;
+  }
+
+  .PageMain p{
+    /* font-size: 16px; */
+  }
+
+  .PageHeader, .PageMain section {
+    padding-right: 53.33px;
+  }
+}
+
+@media screen and (min-width: 1260px) {
+  .App{
+    max-width: 1200px;
+    margin: auto;
+    padding: 31.11px 0;
+  }
+}

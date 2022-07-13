@@ -8,6 +8,10 @@ import cjimg04 from '../../assets/images/certificates/BDPW.jpg';
 import cwimg04 from '../../assets/images/certificates/BDPW.webp';
 import cjimg05 from '../../assets/images/certificates/BDGMG.jpg';
 import cwimg05 from '../../assets/images/certificates/BDGMG.webp';
+import cgdjimg01 from '../../assets/images/certificates/GD-IDA2021.jpg';
+import cgdwimg01 from '../../assets/images/certificates/GD-IDA2021.webp';
+import cojimg01 from '../../assets/images/certificates/BDVD.jpg';
+import cowimg01 from '../../assets/images/certificates/BDVD.webp';
 
 import pjimg01 from '../../assets/images/projects/MauMakan.jpg';
 import pwimg01 from '../../assets/images/projects/MauMakan.webp';
@@ -28,7 +32,7 @@ const data = {
     "nickName" : "Eric",
     "birthDate" : "2001-10-12",
     "birthPlace" : "Jakarta",
-    "email" : "ermpapes2@gmail.com",
+    "email" : "ermapes2@gmail.com",
     "education" : "Universitas Sumatera Utara, Computer Science Undergraduate",
     "address" : "Jl. Pelita VI no 55, Medan Perjuangan, Indonesia",
     "goals" : [
@@ -45,43 +49,63 @@ const data = {
     "favIdol" : "Takeuchi Miyu",
   },
 
-  "certificates": [
-    {
-      "title" : "Menjadi Front-End Web Developer Expert",
-      "from" : "Dicoding Indonesia",
-      "url" : "https://www.dicoding.com/certificates/6RPN8D36RZ2M",
-      "imgJPG" : cjimg01,
-      "imgWEBP" : cwimg01
-    },
-    {
-      "title" : "Membangun Progressive Web Apps",
-      "from" : "Dicoding Indonesia",
-      "url" : "https://www.dicoding.com/certificates/JMZVMGE2JZN9",
-      "imgJPG" : cjimg02,
-      "imgWEBP" : cwimg02
-    },
-    {
-      "title" : "Belajar Fundamental Front-End Web Development",
-      "from" : "Dicoding Indonesia",
-      "url" : "https://www.dicoding.com/certificates/Y6RPNMJV5Z2M",
-      "imgJPG" : cjimg03,
-      "imgWEBP" : cwimg03
-    },
-    {
-      "title" : "Belajar Dasar Pemrograman Web",
-      "from" : "Dicoding Indonesia",
-      "url" : "https://www.dicoding.com/certificates/981P29JV8XOY",
-      "imgJPG" : cjimg04,
-      "imgWEBP" : cwimg04
-    },
-    {
-      "title" : "Belajar Dasar Git dengan GitHub",
-      "from" : "Dicoding Indonesia",
-      "url" : "https://www.dicoding.com/certificates/RVZK1R27QPD5",
-      "imgJPG" : cjimg05,
-      "imgWEBP" : cwimg05
-    }
-  ],
+  "certificates": {
+    "frontend": [
+      {
+        "title" : "Menjadi Front-End Web Developer Expert",
+        "from" : "Dicoding Indonesia",
+        "url" : "https://www.dicoding.com/certificates/6RPN8D36RZ2M",
+        "imgJPG" : cjimg01,
+        "imgWEBP" : cwimg01
+      },
+      {
+        "title" : "Membangun Progressive Web Apps",
+        "from" : "Dicoding Indonesia",
+        "url" : "https://www.dicoding.com/certificates/JMZVMGE2JZN9",
+        "imgJPG" : cjimg02,
+        "imgWEBP" : cwimg02
+      },
+      {
+        "title" : "Belajar Fundamental Front-End Web Development",
+        "from" : "Dicoding Indonesia",
+        "url" : "https://www.dicoding.com/certificates/Y6RPNMJV5Z2M",
+        "imgJPG" : cjimg03,
+        "imgWEBP" : cwimg03
+      },
+      {
+        "title" : "Belajar Dasar Pemrograman Web",
+        "from" : "Dicoding Indonesia",
+        "url" : "https://www.dicoding.com/certificates/981P29JV8XOY",
+        "imgJPG" : cjimg04,
+        "imgWEBP" : cwimg04
+      },
+      {
+        "title" : "Belajar Dasar Git dengan GitHub",
+        "from" : "Dicoding Indonesia",
+        "url" : "https://www.dicoding.com/certificates/RVZK1R27QPD5",
+        "imgJPG" : cjimg05,
+        "imgWEBP" : cwimg05
+      }
+    ],
+    "game": [
+      {
+        "title" : "Game Dev - Participant with The Best Project",
+        "from" : "IT Dev Academy - Fasilkom TI USU",
+        "url" : "https://www.linkedin.com/posts/ericmartinqlz_game-development-it-developer-academy-2021-activity-6905790049091244032-VYXg/",
+        "imgJPG" : cgdjimg01,
+        "imgWEBP" : cgdwimg01
+      }
+    ],
+    "other": [
+      {
+        "title" : "Belajar Dasar Visualisasi Data",
+        "from" : "Dicoding Indonesia",
+        "url" : "https://www.dicoding.com/certificates/0LZ01RK83P65",
+        "imgJPG" : cojimg01,
+        "imgWEBP" : cowimg01
+      }
+    ]
+  },
 
   "projects" : [
     {
@@ -135,6 +159,11 @@ const data = {
         "name" : "React",
         "icon" : <i class="fab fa-react"></i>,
         "color" : "#1F2229"
+      },
+      {
+        "name" : "Vue",
+        "icon" : <i class="fab fa-vuejs"></i>,
+        "color" : "#40B883"
       },
       {
         "name" : "PHP",

@@ -19,7 +19,7 @@ class SkillList extends React.Component {
   }
 
   async componentDidMount() {
-    const skills = this.getSkills(this.props.type);
+    const skills = this.getSkills(this.props.type) || [];
     this.setState({ skills });
   }
 

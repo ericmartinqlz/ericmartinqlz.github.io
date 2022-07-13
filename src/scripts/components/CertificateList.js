@@ -4,21 +4,22 @@ import CertificateItem from '../components/CertificateItem';
 import data from '../data/data';
 
 class CertificateList extends React.Component {
-  constructor() {
+  constructor(props) {
     super();
     this.state = {
       certificates: [],
     }
 
+    this.props = props;
     this.getCertificates = this.getCertificates.bind(this);
   }
 
-  getCertificates() {
-    return data.certificates;
+  getCertificates(type) {
+    return data.certificates[type];
   }
 
   async componentDidMount() {
-    const certificates = this.getCertificates();
+    const certificates = this.getCertificates(this.props.type) || [];
     this.setState({ certificates });
   }
 

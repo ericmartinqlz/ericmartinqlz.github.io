@@ -14,22 +14,30 @@ class Biodata extends React.Component {
     }
 
     this.getBiodata = this.getBiodata.bind(this);
+    this.getAge = this.getAge.bind(this);
   }
 
   getBiodata() {
     return data.biodata;
   }
+  getAge(birthDate) {
+    let today = new Date();
+
+    let ageYear = today.getFullYear() - birthDate.getFullYear();
+    let monthYear = today.getMonth() - birthDate.getMonth();
+
+    if (monthYear < 0 || (monthYear === 0 && today.getDate() < birthDate.getDate()))
+      ageYear--;
+
+    return ageYear
+  }
 
   async componentDidMount() {
     const biodata = this.getBiodata();
 
-    const currentDate = new Date();
-    let currentYear = currentDate.getFullYear();
-
     const birthDate = new Date(biodata['birthDate']);
-    let birthYear = birthDate.getFullYear();
+    const age = this.getAge(birthDate);
 
-    let age = currentYear % birthYear;
     let strBirthDate = birthDate.toLocaleString('en-US', {
       year: 'numeric',
       month: 'long',

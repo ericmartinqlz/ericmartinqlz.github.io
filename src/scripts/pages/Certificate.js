@@ -17,7 +17,20 @@ class Certificate extends React.Component {
 
         <div className="PageMain">
           <section>
-            <CertificateList />
+            <div className="frontend-section">
+              <h3>Frontend Dev</h3>
+              <CertificateList type="frontend" />
+            </div>
+
+            <div className="game-section">
+              <h3>Game Dev</h3>
+              <CertificateList type="game" />
+            </div>
+
+            <div className="other-section">
+              <h3>Others</h3>
+              <CertificateList type="other" />
+            </div>
           </section>
         </div>
       </div>

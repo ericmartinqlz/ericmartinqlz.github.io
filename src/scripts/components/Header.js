@@ -48,9 +48,9 @@ class Header extends React.Component {
                   "ease-out" + (navData.isActive ? " active-link" : "")
                 }
                 >
-                <i className="icon icon-home"></i>
-                <i className="icon-home-fill icon-fill"></i>
-                <span>About Me</span>
+                <i className="icon icon-home ease-out"></i>
+                <i className="icon-home-fill icon-fill ease-out"></i>
+                <span className="ease-out">About Me</span>
               </NavLink>
             </li>
             <li>
@@ -61,9 +61,9 @@ class Header extends React.Component {
                   "ease-out" + (navData.isActive ? " active-link" : "")
                 }
                 >
-                <i className="icon icon-timeline"></i>
-                <i className="icon-timeline-fill icon-fill"></i>
-                <span>Timeline</span>
+                <i className="icon icon-timeline ease-out"></i>
+                <i className="icon-timeline-fill icon-fill ease-out"></i>
+                <span className="ease-out">Timeline</span>
               </NavLink>
             </li>
             <li>
@@ -74,9 +74,9 @@ class Header extends React.Component {
                   "ease-out" + (navData.isActive ? " active-link" : "")
                 }
                 >
-                <i className="icon icon-skill"></i>
-                <i className="icon-skill-fill icon-fill"></i>
-                <span>Skill</span>
+                <i className="icon icon-skill ease-out"></i>
+                <i className="icon-skill-fill icon-fill ease-out"></i>
+                <span className="ease-out">Skill</span>
               </NavLink>
             </li>
             <li>
@@ -87,9 +87,9 @@ class Header extends React.Component {
                   "ease-out" + (navData.isActive ? " active-link" : "")
                 }
                 >
-                <i className="icon icon-certificate"></i>
-                <i className="icon-certificate-fill icon-fill"></i>
-                <span>Certificate</span>
+                <i className="icon icon-certificate ease-out"></i>
+                <i className="icon-certificate-fill icon-fill ease-out"></i>
+                <span className="ease-out">Certificate</span>
               </NavLink>
             </li>
             <li>
@@ -100,9 +100,9 @@ class Header extends React.Component {
                   "ease-out" + (navData.isActive ? " active-link" : "")
                 }
                 >
-                <i className="icon icon icon-project"></i>
-                <i className="icon-project-fill icon-fill"></i>
-                <span>Project</span>
+                <i className="icon icon icon-project ease-out"></i>
+                <i className="icon-project-fill icon-fill ease-out"></i>
+                <span className="ease-out">Project</span>
               </NavLink>
             </li>
             <li>
@@ -113,9 +113,9 @@ class Header extends React.Component {
                   "ease-out" + (navData.isActive ? " active-link" : "")
                 }
                 >
-                <i className="icon icon-contact"></i>
-                <i className="icon-contact-fill icon-fill"></i>
-                <span>Contact</span>
+                <i className="icon icon-contact ease-out"></i>
+                <i className="icon-contact-fill icon-fill ease-out"></i>
+                <span className="ease-out">Contact</span>
               </NavLink>
             </li>
           </ul>

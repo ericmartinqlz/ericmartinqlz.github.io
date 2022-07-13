@@ -66,7 +66,13 @@
   }
   nav li a:hover {
     background: unset;
+    /* transform: scale(1.1, 1.1); */
+  }
+  nav li a:hover i {
     transform: scale(1.1, 1.1);
+  }
+  nav li a:hover span {
+    font-size: 14px;
   }
   nav li span{
     font-size: 12px;

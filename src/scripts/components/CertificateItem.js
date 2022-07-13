@@ -19,7 +19,7 @@ class CertificateItem extends React.Component {
           </div>
 
           <div className="certificate-info">
-            <h3>{this.props.title}</h3>
+            <h4>{this.props.title}</h4>
             <p>{this.props.from}</p>
           </div>
         </a>
